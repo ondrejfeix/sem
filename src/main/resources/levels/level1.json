@@ -1,0 +1,138 @@
+{
+  "map" : "level1_test_bg.png",
+  "levelNumber" : 1,
+  "rooms" : [
+    {
+      "type" : "fight",
+      "id" : 1,
+      "dimensions" : {
+        "width" : 320,
+        "height" : 170,
+        "posX" : 70,
+        "posY" : 340
+      },
+      "neighbors" : [
+        5
+      ],
+      "type_specific" : {
+        "enemies" : [
+          {
+            "type": "orc",
+            "posX": 100,
+            "posY": 425
+          }
+        ]
+      }
+    },
+
+    {
+      "type" : "spawn",
+      "id" : 2,
+        "dimensions" : {
+            "width" : 320,
+            "height" : 170,
+            "posX" : 415,
+            "posY" : 570
+        },
+        "neighbors" : [
+          6
+        ],
+      "type_specific" : {
+        "spawnPoint" : {
+          "posX" : 500,
+          "posY" : 600
+        }
+      }
+    },
+
+    {
+      "type" : "fight",
+      "id" : 3,
+      "dimensions" : {
+        "width" : 320,
+        "height" : 170,
+        "posX" : 765,
+        "posY" : 340
+      },
+        "neighbors" : [
+            5, 7
+        ],
+        "type_specific" : {
+          "enemies" : [
+            {
+              "type": "goblin",
+              "posX": 1000,
+              "posY": 480
+            },
+            {
+              "type": "goblin",
+              "posX": 900,
+              "posY": 400
+            }
+          ]
+        }
+    },
+
+    {
+      "type" : "portal",
+        "id" : 4,
+        "dimensions" : {
+            "width" : 320,
+            "height" : 170,
+            "posX" : 765,
+            "posY" : 85
+        },
+        "neighbors" : [
+            7
+        ],
+      "type_specific" : {
+        "portal" : {
+          "posX" : 925,
+          "posY" : 100
+        }
+      }
+    },
+
+    {
+      "type" : "corridor",
+        "id" : 5,
+        "dimensions" : {
+            "width" : 375,
+            "height" : 100,
+            "posX" : 390,
+            "posY" : 370
+        },
+        "neighbors" : [
+            1, 3, 6
+        ]
+    },
+
+    {
+      "type" : "corridor",
+      "id" : 6,
+      "dimensions" : {
+        "width" : 135,
+        "height" : 100,
+        "posX" : 510,
+        "posY" : 470
+      },
+      "neighbors" : [
+        2, 5
+      ]
+    },
+
+    {
+      "type" : "corridor",
+      "id" : 7,
+      "dimensions" : {
+        "width" : 130,
+        "height" : 85,
+        "posX" : 860,
+        "posY" : 255
+      },
+      "neighbors" : [
+        3, 4
+      ]
+    }
+  ]
+}

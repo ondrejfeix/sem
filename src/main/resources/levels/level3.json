@@ -1,0 +1,111 @@
+{
+  "map" : "level3_test_bg.png",
+  "levelNumber" : 3,
+  "rooms" : [
+    {
+      "type" : "spawn",
+      "id" : 1,
+      "dimensions" : {
+        "width" : 190,
+        "height" : 120,
+        "posX" : 555,
+        "posY" : 615
+      },
+        "neighbors" : [
+            4
+        ],
+        "type_specific" : {
+            "spawnPoint" : {
+                "posX" : 640,
+                "posY" : 700
+            }
+        }
+    },
+
+    {
+      "type" : "fight",
+      "id" : 2,
+      "dimensions" : {
+        "width" : 310,
+        "height" : 155,
+        "posX" : 495,
+        "posY" : 360
+      },
+        "neighbors" : [
+          4, 5
+        ],
+        "type_specific" : {
+            "enemies" : [
+                {
+                    "type": "goblin",
+                    "posX": 520,
+                    "posY": 460
+                },
+                {
+                    "type": "goblin",
+                    "posX": 763,
+                    "posY": 400
+                },
+                {
+                    "type": "orc",
+                    "posX": 545,
+                    "posY": 397
+                },
+                {
+                    "type": "orc",
+                    "posX": 757,
+                    "posY": 460
+                }
+            ]
+        }
+    },
+
+    {
+      "type" : "boss",
+        "id" : 3,
+        "dimensions" : {
+            "width" : 430,
+            "height" : 192,
+            "posX" : 435,
+            "posY" : 85
+        },
+        "neighbors" : [
+          5
+        ],
+      "type_specific" : {
+        "boss" : {
+          "posX" : 620,
+          "posY" : 110
+        }
+      }
+    },
+
+    {
+      "type" : "corridor",
+        "id" : 4,
+        "dimensions" : {
+          "width" : 130,
+          "height" : 100,
+            "posX" : 585,
+            "posY" : 515
+        },
+        "neighbors" : [
+          1, 2
+        ]
+    },
+
+    {
+      "type" : "corridor",
+        "id" : 5,
+        "dimensions" : {
+          "width" : 130,
+          "height" : 83,
+            "posX" : 585,
+            "posY" : 277
+        },
+        "neighbors" : [
+          2, 3
+        ]
+    }
+  ]
+}

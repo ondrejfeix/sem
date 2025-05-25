@@ -1,0 +1,238 @@
+{
+  "map" : "level2_test_bg.png",
+  "levelNumber" : 2,
+  "rooms" : [
+    {
+      "type" : "spawn",
+      "id" : 1,
+      "dimensions" : {
+        "width" : 265,
+        "height" : 165,
+        "posX" : 115,
+        "posY" : 85
+      },
+      "neighbors" : [
+        7
+      ],
+      "type_specific" : {
+        "spawnPoint" : {
+          "posX" : 245,
+          "posY" : 116
+        }
+      }
+    },
+
+    {
+      "type" : "fight",
+      "id" : 2,
+      "dimensions" : {
+        "width" : 265,
+        "height" : 160,
+        "posX" : 455,
+        "posY" : 340
+      },
+      "neighbors" : [
+        8, 9, 10
+      ],
+      "type_specific" : {
+        "enemies" : [
+          {
+            "type": "goblin",
+            "posX": 576,
+            "posY": 363
+          },
+          {
+            "type": "goblin",
+            "posX": 650,
+            "posY": 370
+          },
+          {
+            "type": "goblin",
+            "posX": 650,
+            "posY": 460
+          }
+        ]
+      }
+    },
+
+    {
+      "type" : "fight",
+      "id" : 3,
+      "dimensions" : {
+        "width" : 265,
+        "height" : 165,
+        "posX" : 455,
+        "posY" : 600
+      },
+      "neighbors" : [
+        9
+      ],
+      "type_specific" : {
+        "enemies" : [
+          {
+            "type": "orc",
+            "posX": 500,
+            "posY": 732
+          },
+          {
+            "type": "goblin",
+            "posX": 683,
+            "posY": 732
+          }
+        ]
+      }
+    },
+
+    {
+      "type" : "trader",
+      "id" : 4,
+      "dimensions" : {
+        "width" : 265,
+        "height" : 165,
+        "posX" : 455,
+        "posY" : 75
+      },
+      "neighbors" : [
+        10, 11
+      ],
+      "type_specific" : {
+        "trader" : {
+          "posX" : 500,
+          "posY" : 150
+        }
+      }
+    },
+
+    {
+      "type" : "fight",
+      "id" : 5,
+      "dimensions" : {
+        "width" : 265,
+        "height" : 165,
+        "posX" : 850,
+        "posY" : 85
+      },
+      "neighbors" : [
+        11, 12
+      ],
+      "type_specific" : {
+        "enemies" : [
+          {
+            "type": "goblin",
+            "posX": 1075,
+            "posY": 213
+          },
+          {
+            "type": "goblin",
+            "posX": 1075,
+            "posY": 111
+          }
+        ]
+      }
+    },
+
+    {
+      "type" : "portal",
+      "id" : 6,
+      "dimensions" : {
+        "width" : 265,
+        "height" : 165,
+        "posX" : 850,
+        "posY" : 340
+      },
+      "neighbors" : [
+        12
+      ],
+      "type_specific" : {
+        "portal" : {
+          "posX" : 950,
+          "posY" : 420
+        }
+      }
+    },
+
+    {
+      "type" : "corridor",
+      "id" : 7,
+      "dimensions" : {
+        "width" : 115,
+        "height" : 208,
+        "posX" : 190,
+        "posY" : 250
+      },
+      "neighbors" : [
+        1, 8
+      ]
+    },
+
+    {
+      "type" : "corridor",
+      "id" : 8,
+      "dimensions" : {
+        "width" : 150,
+        "height" : 103,
+        "posX" : 305,
+        "posY" : 355
+      },
+      "neighbors" : [
+        2, 7
+      ]
+    },
+
+    {
+      "type" : "corridor",
+      "id" : 9,
+      "dimensions" : {
+        "width" : 120,
+        "height" : 100,
+        "posX" : 530,
+        "posY" : 500
+      },
+      "neighbors" : [
+        2, 3
+      ]
+    },
+
+    {
+      "type" : "corridor",
+      "id" : 10,
+      "dimensions" : {
+        "width" : 120,
+        "height" : 100,
+        "posX" : 530,
+        "posY" : 240
+      },
+      "neighbors" : [
+        2, 4
+      ]
+    },
+
+    {
+      "type" : "corridor",
+      "id" : 11,
+      "dimensions" : {
+        "width" : 130,
+        "height" : 105,
+        "posX" : 720,
+        "posY" : 115
+      },
+      "neighbors" : [
+        4, 5
+      ]
+    },
+
+    {
+      "type" : "corridor",
+      "id" : 12,
+      "dimensions" : {
+        "width" : 120,
+        "height" : 90,
+        "posX" : 925,
+        "posY" : 250
+      },
+      "neighbors" : [
+        5, 6
+      ]
+    }
+  ]
+}
